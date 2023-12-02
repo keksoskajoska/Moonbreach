@@ -52,11 +52,7 @@ public class SteamLobby : MonoBehaviour
     {
         networkManager = GetComponent<NetworkManager>();
 
-        if (!SteamManager.Initialized)
-        {
-            Debug.LogError("Steam is not running in the background! Please launch Steam!");
-            return;
-        }
+        if (!SteamManager.Initialized) { return; }
         MakeInstance();
 
         lobbyCreated = Callback<LobbyCreated_t>.Create(OnLobbyCreated);
