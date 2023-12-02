@@ -57,13 +57,6 @@ public class SteamLobby : MonoBehaviour
             Debug.LogError("Steam is not running in the background! Please launch Steam!");
             return;
         }
-
-
-
-
-
-
-
         MakeInstance();
 
         lobbyCreated = Callback<LobbyCreated_t>.Create(OnLobbyCreated);
