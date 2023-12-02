@@ -64,7 +64,6 @@ public class SteamLobby : MonoBehaviour
 
 
 
-
         MakeInstance();
 
         lobbyCreated = Callback<LobbyCreated_t>.Create(OnLobbyCreated);
