@@ -1,16 +1,18 @@
 {
   "dependencies": {
     "com.firstgeargames.fishnet": {
-      "version": "file:C:/Users/bszan/Downloads/FishNet-3/FishNet-3/Assets/FishNet",
+      "version": "https://github.com/FirstGearGames/FishNet.git#v3",
       "depth": 0,
-      "source": "local",
-      "dependencies": {}
+      "source": "git",
+      "dependencies": {},
+      "hash": "401b8f9539cbbd29c12e37ba342ec66bb39ed345"
     },
     "com.rlabrecque.steamworks.net": {
-      "version": "file:C:/Users/bszan/Downloads/Steamworks.NET-master/Steamworks.NET-master/com.rlabrecque.steamworks.net",
+      "version": "https://github.com/rlabrecque/Steamworks.NET.git?path=/com.rlabrecque.steamworks.net",
       "depth": 0,
-      "source": "local",
-      "dependencies": {}
+      "source": "git",
+      "dependencies": {},
+      "hash": "a3fe8091f7237eef3f38becc3faa29b2dc6f9ce9"
     },
     "com.unity.burst": {
       "version": "1.8.8",
