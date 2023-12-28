@@ -94,7 +94,7 @@ public class SteamLobby : MonoBehaviour
             return;
         }
 
-        networkManager.ServerManager.StartConnection();
+        // networkManager.ServerManager.StartConnection();
 
         SteamMatchmaking.SetLobbyData(
             new CSteamID(callback.m_ulSteamIDLobby),
@@ -176,6 +176,7 @@ public class SteamLobby : MonoBehaviour
 
     public void CreateNewLobby(ELobbyType lobbyType)
     {
-        SteamMatchmaking.CreateLobby(lobbyType, networkManager.GetComponent<FishySteamworks.FishySteamworks>().GetMaximumClients());
+        //SteamMatchmaking.CreateLobby(lobbyType, networkManager.GetComponent<FishySteamworks.FishySteamworks>().GetMaximumClients());
+        SteamMatchmaking.CreateLobby(lobbyType, 5);
     }
 }
